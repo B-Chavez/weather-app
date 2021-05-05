@@ -34,4 +34,27 @@ button {
 body {
   background-image: url('./images/background.svg');
   background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    background-color: teal;
+    width: 50%;
+    height: 50%;
+  }
+
+  img {
+    width: 50%;
+    height: 50%;
+  }
+
+  button {
+    width: 50%;
+    height: 50%;
+  }
+
+  .buttonContainer {
+
+  }
 }
