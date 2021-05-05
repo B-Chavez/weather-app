@@ -39,7 +39,6 @@ body {
 
 @media only screen and (max-width: 600px) {
   .card {
-    background-color: teal;
     width: 50%;
     height: 50%;
   }
@@ -50,11 +49,11 @@ body {
   }
 
   button {
-    width: 50%;
-    height: 50%;
+    color: white;
   }
 
   .buttonContainer {
-
+    display: flex;
+    justify-content: center;
   }
 }
