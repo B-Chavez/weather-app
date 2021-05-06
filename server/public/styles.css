@@ -43,17 +43,27 @@ body {
     height: 50%;
   }
 
-  img {
+  .container img {
     width: 50%;
     height: 50%;
   }
 
   button {
     color: white;
+    width: 75%;
   }
 
   .buttonContainer {
     display: flex;
     justify-content: center;
+  }
+
+  .navbar {
+    background: teal;
+    height: 50px;
+  }
+
+  .navbar img {
+    height: 50px;
   }
 }
