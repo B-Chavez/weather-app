@@ -1,0 +1,69 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  width: 750px;
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+
+.outerContainer {
+  display: flex;
+  justify-content: center;
+}
+
+svg {
+  width: 99vw;
+  height: 99vh;
+  position: absolute;
+}
+
+button {
+  width: 234px;
+  height: 68px;
+  left: 610px;
+  top: 614px;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+body {
+  background-image: url('./images/background.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 50%;
+    height: 50%;
+  }
+
+  .container img {
+    width: 50%;
+    height: 50%;
+  }
+
+  button {
+    color: white;
+    width: 75%;
+  }
+
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar {
+    background: teal;
+    height: 50px;
+  }
+
+  .navbar img {
+    height: 50px;
+  }
+}
