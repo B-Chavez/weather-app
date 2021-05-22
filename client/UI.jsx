@@ -46,7 +46,7 @@ class UI extends React.Component{
           <div className='container card'>
             <img src='./images/sun.svg' alt='sun' width='200' height='200'></img>
             <div className='temp'>Temperature {this.state.weatherData.main.feels_like}&deg;</div>
-            <div className='humidity'>Humidity {this.state.weatherData.main.humidity}&percnt;</div>
+            <div className='humidity'>Humidity {this.state.weatherData.main.humidity}&#37;</div>
             <div className='location'>Location: Los Angeles</div>
             <div className='buttonContainer'>
               <button>Favorite Locations</button>
