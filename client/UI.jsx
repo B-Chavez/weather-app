@@ -1,11 +1,15 @@
 require('node-fetch');
 import React from 'react';
+import parseRoute from './lib/parse-route'
+
+import Nav from './navbar';
 
 class UI extends React.Component{
   constructor(props) {
     super(props);
     this.state = {
-      weatherData: null
+      weatherData: null,
+      route: parseRoute(window.location.hash)
     };
   }
 
@@ -26,6 +30,27 @@ class UI extends React.Component{
 
       })
 
+    window.addEventListener('hashchange', () => {
+      this.setState({ route: parseRoute(window.location.hash) });
+    });
+    /**
+     * Listen for hash change events on the window object
+     * Each time the window.location.hash changes, parse
+     * it with the parseRoute() function and update state
+     */
+
+  }
+
+  renderPage() {
+    const { route } = this.state;
+    if (route.path === '') {
+      return;
+    }
+    if (route.path === 'products') {
+      const productId = route.params.get('productId');
+      return <ProductDetails productId={productId} />;
+    }
+    return <NotFound />;
   }
 
 
@@ -39,6 +64,8 @@ class UI extends React.Component{
     }
     return(
       <div>
+        <Nav />
+        { this.renderPage()}
         <div className='navbar'>
           <img src="./images/home.svg" alt="home button"/>
         </div>
