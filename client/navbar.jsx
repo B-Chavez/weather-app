@@ -8,12 +8,9 @@ class Nav extends React.Component {
     return (
         <div>
           <div className='navbar'>
-            <img src='./images/home.svg' alt='home button' />
-          </div>
-          <div className='outerContainer'>
-            <div className='container card'>
-              About
-          </div>
+            <ul>
+            <li><a href="#home"><img src='./images/home.svg' alt='home button' /></a></li>
+            </ul>
           </div>
         </div>
     )

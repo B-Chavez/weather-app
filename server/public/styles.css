@@ -37,6 +37,25 @@ body {
   background-size: 100%;
 }
 
+/* Navbar */
+
+.navbar {
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  position: fixed;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 @media only screen and (max-width: 600px) {
   .card {
     width: 50%;
@@ -59,8 +78,8 @@ body {
   }
 
   .navbar {
-    background: teal;
     height: 50px;
+    position: static;
   }
 
   .navbar img {
